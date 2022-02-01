@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-02-01T13:50:25.774Z" agent="5.0 (X11)" etag="1dBfmAOGZAZ31_UZ9WMZ" version="16.4.11" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-01T14:08:11.886Z" agent="5.0 (X11)" etag="qDcePrSVEBpy_ecXaTr6" version="16.4.11" type="github">
   <diagram id="w_0Kd4TP8-2ugyQYXVbY" name="Page-1">
-    <mxGraphModel dx="1144" dy="649" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2253" dy="1442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-1" value="&lt;span style=&quot;left: 196.444px ; top: 172.887px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.793482)&quot; dir=&quot;ltr&quot;&gt;Fonction : traiter les message en provenance du moniteur&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 196.444px ; top: 195.607px ; font-size: 9.6px ; font-family: sans-serif&quot; dir=&quot;ltr&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;left: 201.129px ; top: 195.607px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(1.00673)&quot; dir=&quot;ltr&quot;&gt;tt&lt;/span&gt;&lt;span style=&quot;left: 208.617px ; top: 195.607px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.76572)&quot; dir=&quot;ltr&quot;&gt;endre ‘connexion établie’&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 196.444px ; top: 207.127px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.832919)&quot; dir=&quot;ltr&quot;&gt;tant que&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 196.444px ; top: 218.647px ; font-size: 9.6px ; font-family: sans-serif&quot; dir=&quot;ltr&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;left: 201.129px ; top: 218.647px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(1.00673)&quot; dir=&quot;ltr&quot;&gt;tt&lt;/span&gt;&lt;span style=&quot;left: 208.617px ; top: 218.647px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.813278)&quot; dir=&quot;ltr&quot;&gt;endre message de inputStream /*Read*/&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 196.444px ; top: 230.167px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.82908)&quot; dir=&quot;ltr&quot;&gt;// traiter le message&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 196.444px ; top: 241.687px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.798909)&quot; dir=&quot;ltr&quot;&gt;si message est ‘ouvrir communication robot’&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 199.938px ; top: 253.207px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.793406)&quot; dir=&quot;ltr&quot;&gt;produire ‘ouvrir comRobot’&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 196.444px ; top: 264.727px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.801412)&quot; dir=&quot;ltr&quot;&gt;sinon si message est ‘démarrer robot sans wd’&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 199.938px ; top: 276.247px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.807204)&quot; dir=&quot;ltr&quot;&gt;produit ‘démarrer robot sans wd&lt;/span&gt;&lt;span style=&quot;left: 325.324px ; top: 276.247px ; font-size: 9.6px ; font-family: sans-serif&quot; dir=&quot;ltr&quot;&gt; &lt;/span&gt;&lt;span style=&quot;left: 327.071px ; top: 276.247px ; font-size: 9.6px ; font-family: sans-serif&quot; dir=&quot;ltr&quot;&gt;‘&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 196.444px ; top: 287.767px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.789862)&quot; dir=&quot;ltr&quot;&gt;sinon si message est un ordre de mouvement&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 199.938px ; top: 299.287px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.770774)&quot; dir=&quot;ltr&quot;&gt;mouvement = mouvement du message&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 196.444px ; top: 310.807px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.807669)&quot; dir=&quot;ltr&quot;&gt;fi&lt;/span&gt;&lt;span style=&quot;left: 201.33px ; top: 310.807px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.831535)&quot; dir=&quot;ltr&quot;&gt;nsi&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 196.444px ; top: 322.327px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.807669)&quot; dir=&quot;ltr&quot;&gt;fi&lt;/span&gt;&lt;span style=&quot;left: 201.33px ; top: 322.327px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.806593)&quot; dir=&quot;ltr&quot;&gt;n tant que&lt;/span&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="160" width="320" height="210" as="geometry" />
+          <mxGeometry x="20" y="-25" width="320" height="210" as="geometry" />
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;endArrow=oval;endFill=1;startArrow=oval;startFill=1;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-3" target="bAt_LqIN8Pzx5NF2WYkV-4">
           <mxGeometry relative="1" as="geometry">
@@ -53,14 +53,24 @@
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-38" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;dashed=1;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-4" target="bAt_LqIN8Pzx5NF2WYkV-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-4" value="Traiter les messages en provenance du moniteur" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-65" value="Ouvrir Com Robot" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;" vertex="1" connectable="0" parent="bAt_LqIN8Pzx5NF2WYkV-38">
+          <mxGeometry x="0.2527" y="-6" relative="1" as="geometry">
+            <mxPoint x="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-4" value="Traiter les messages en provenance du moniteur" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;gradientColor=#7EA6E0;gradientDirection=east;fillColor=#66FF66;" vertex="1" parent="1">
           <mxGeometry x="559.9300000000001" y="310" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-31" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-5" target="bAt_LqIN8Pzx5NF2WYkV-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-5" value="&lt;span style=&quot;left: 693.878px; top: 433.38px; font-size: 9.6px; transform: scaleX(0.847417);&quot; dir=&quot;ltr&quot;&gt;Me&lt;/span&gt;&lt;span style=&quot;left: 705.897px; top: 433.38px; font-size: 9.6px; transform: scaleX(1.00673);&quot; dir=&quot;ltr&quot;&gt;tt&lt;/span&gt;&lt;span style=&quot;left: 713.481px; top: 433.38px; font-size: 9.6px; transform: scaleX(0.758073);&quot; dir=&quot;ltr&quot;&gt;re en place la&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 689.102px; top: 444.9px; font-size: 9.6px; transform: scaleX(0.785315);&quot; dir=&quot;ltr&quot;&gt;communication avec&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 713.212px; top: 456.42px; font-size: 9.6px; transform: scaleX(0.820332);&quot; dir=&quot;ltr&quot;&gt;le robot&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
-          <mxGeometry x="810" y="294" width="120" height="60" as="geometry" />
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-71" value="messageToMon" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;" vertex="1" connectable="0" parent="bAt_LqIN8Pzx5NF2WYkV-31">
+          <mxGeometry x="-0.6658" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-5" value="&lt;span style=&quot;left: 693.878px; top: 433.38px; font-size: 9.6px; transform: scaleX(0.847417);&quot; dir=&quot;ltr&quot;&gt;Me&lt;/span&gt;&lt;span style=&quot;left: 705.897px; top: 433.38px; font-size: 9.6px; transform: scaleX(1.00673);&quot; dir=&quot;ltr&quot;&gt;tt&lt;/span&gt;&lt;span style=&quot;left: 713.481px; top: 433.38px; font-size: 9.6px; transform: scaleX(0.758073);&quot; dir=&quot;ltr&quot;&gt;re en place la&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 689.102px; top: 444.9px; font-size: 9.6px; transform: scaleX(0.785315);&quot; dir=&quot;ltr&quot;&gt;communication avec&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 713.212px; top: 456.42px; font-size: 9.6px; transform: scaleX(0.820332);&quot; dir=&quot;ltr&quot;&gt;le robot&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="830" y="280" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-32" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-6" target="bAt_LqIN8Pzx5NF2WYkV-7">
           <mxGeometry relative="1" as="geometry" />
@@ -133,7 +143,30 @@
             <mxPoint x="88" y="71" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-8" value="&lt;span style=&quot;left: 313.501px; top: 520.768px; font-size: 9.6px; transform: scaleX(0.819529);&quot; dir=&quot;ltr&quot;&gt;Etablissement de la&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 300.858px; top: 532.288px; font-size: 9.6px; transform: scaleX(0.771453);&quot; dir=&quot;ltr&quot;&gt;connexion avec le moniteur&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-68" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fontFamily=Helvetica;fontSize=11;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-8" target="bAt_LqIN8Pzx5NF2WYkV-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="530" />
+              <mxPoint x="195" y="530" />
+              <mxPoint x="195" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-69" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fontFamily=Helvetica;fontSize=11;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-8" target="bAt_LqIN8Pzx5NF2WYkV-58">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="530" />
+              <mxPoint x="150" y="530" />
+              <mxPoint x="150" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-70" value="Connection établie" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;" vertex="1" connectable="0" parent="bAt_LqIN8Pzx5NF2WYkV-69">
+          <mxGeometry x="-0.392" y="1" relative="1" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-8" value="&lt;span style=&quot;left: 313.501px; top: 520.768px; font-size: 9.6px; transform: scaleX(0.819529);&quot; dir=&quot;ltr&quot;&gt;Etablissement de la&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 300.858px; top: 532.288px; font-size: 9.6px; transform: scaleX(0.771453);&quot; dir=&quot;ltr&quot;&gt;connexion avec le moniteur&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#66FF66;gradientDirection=east;" vertex="1" parent="1">
           <mxGeometry x="379.93" y="460" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-25" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#FF0000;strokeWidth=2;dashed=1;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-9">
@@ -154,7 +187,7 @@
             <mxPoint x="35" y="-5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-9" value="&lt;span style=&quot;left: 273.281px; top: 441.463px; font-size: 9.6px; transform: scaleX(0.805327);&quot; dir=&quot;ltr&quot;&gt;Démarrer serveur&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-9" value="&lt;span style=&quot;left: 273.281px; top: 441.463px; font-size: 9.6px; transform: scaleX(0.805327);&quot; dir=&quot;ltr&quot;&gt;Démarrer serveur&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="310" y="354" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-10" value="&lt;span style=&quot;left: 463.373px ; top: 187.964px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.803908)&quot; dir=&quot;ltr&quot;&gt;Fonction : déplacer robot&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 463.373px ; top: 210.684px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.825958)&quot; dir=&quot;ltr&quot;&gt;tant que périodiquement (100 ms)&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 466.868px ; top: 222.204px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.816027)&quot; dir=&quot;ltr&quot;&gt;si robot démarré est vrai&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 470.362px ; top: 233.724px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.778863)&quot; dir=&quot;ltr&quot;&gt;lire mouvement&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 470.362px ; top: 245.244px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.781215)&quot; dir=&quot;ltr&quot;&gt;envoyer ordre de mouvement au robot&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 466.868px ; top: 256.764px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.807669)&quot; dir=&quot;ltr&quot;&gt;fi&lt;/span&gt;&lt;span style=&quot;left: 471.754px ; top: 256.764px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.784571)&quot; dir=&quot;ltr&quot;&gt;n si&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 463.373px ; top: 268.284px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.807669)&quot; dir=&quot;ltr&quot;&gt;fi&lt;/span&gt;&lt;span style=&quot;left: 468.26px ; top: 268.284px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.806593)&quot; dir=&quot;ltr&quot;&gt;n tant que&lt;/span&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
@@ -164,16 +197,16 @@
           <mxGeometry x="920" y="110" width="240" height="160" as="geometry" />
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-12" value="&lt;span style=&quot;left: 157.643px ; top: 369.382px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.79816)&quot; dir=&quot;ltr&quot;&gt;Fonction : démarrer serveur&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 157.643px ; top: 392.102px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.793455)&quot; dir=&quot;ltr&quot;&gt;lancer serveur&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 157.643px ; top: 403.622px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.780117)&quot; dir=&quot;ltr&quot;&gt;si échec a&lt;/span&gt;&lt;span style=&quot;left: 195.141px ; top: 403.622px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.791095)&quot; dir=&quot;ltr&quot;&gt;ffi&lt;/span&gt;&lt;span style=&quot;left: 202.485px ; top: 403.622px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.792606)&quot; dir=&quot;ltr&quot;&gt;cher un message et stopper le programme&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 157.643px ; top: 415.142px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.783171)&quot; dir=&quot;ltr&quot;&gt;sinon produire ‘serveur démarré’&lt;/span&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="40" y="410" width="240" height="120" as="geometry" />
+          <mxGeometry x="-130" y="425" width="240" height="120" as="geometry" />
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-13" value="&lt;span style=&quot;left: 179.916px ; top: 568.941px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.795512)&quot; dir=&quot;ltr&quot;&gt;Fonction : connecter au moniteur&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 179.916px ; top: 591.661px ; font-size: 9.6px ; font-family: sans-serif&quot; dir=&quot;ltr&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;left: 184.6px ; top: 591.661px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(1.00673)&quot; dir=&quot;ltr&quot;&gt;tt&lt;/span&gt;&lt;span style=&quot;left: 192.088px ; top: 591.661px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.777518)&quot; dir=&quot;ltr&quot;&gt;endre ‘serveur démarré’&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 179.916px ; top: 603.181px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.817276)&quot; dir=&quot;ltr&quot;&gt;appeler AcceptClient et a&lt;/span&gt;&lt;span style=&quot;left: 279.324px ; top: 603.181px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(1.00673)&quot; dir=&quot;ltr&quot;&gt;tt&lt;/span&gt;&lt;span style=&quot;left: 286.812px ; top: 603.181px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.788695)&quot; dir=&quot;ltr&quot;&gt;endre ‘ouvrir socket’&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 179.916px ; top: 614.701px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.772047)&quot; dir=&quot;ltr&quot;&gt;si ok produire ‘connexion établie&lt;/span&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="70" y="570" width="200" height="100" as="geometry" />
+          <mxGeometry x="-60" y="650" width="200" height="100" as="geometry" />
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-14" value="&lt;span style=&quot;left: 343.228px ; top: 650.578px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.804795)&quot; dir=&quot;ltr&quot;&gt;Fonction : démarrer robot sans wd&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 343.228px ; top: 673.298px ; font-size: 9.6px ; font-family: sans-serif&quot; dir=&quot;ltr&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;left: 347.913px ; top: 673.298px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(1.00673)&quot; dir=&quot;ltr&quot;&gt;tt&lt;/span&gt;&lt;span style=&quot;left: 355.401px ; top: 673.298px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.791652)&quot; dir=&quot;ltr&quot;&gt;endre ‘démarrer robot sans wd’&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 343.228px ; top: 684.818px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.790552)&quot; dir=&quot;ltr&quot;&gt;envoyer ordre de démarrer sans wd au robot&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 343.228px ; top: 696.338px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.802819)&quot; dir=&quot;ltr&quot;&gt;si l’ordre est ok&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 346.722px ; top: 707.858px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.782416)&quot; dir=&quot;ltr&quot;&gt;robot démarré := vrai&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 346.722px ; top: 719.378px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.831827)&quot; dir=&quot;ltr&quot;&gt;poster messageToMon ACK&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 343.228px ; top: 730.898px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.804607)&quot; dir=&quot;ltr&quot;&gt;sinon&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 346.722px ; top: 742.418px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.829472)&quot; dir=&quot;ltr&quot;&gt;poster messageToMon NAC&lt;/span&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="530" y="660" width="230" height="150" as="geometry" />
+          <mxGeometry x="690" y="660" width="230" height="150" as="geometry" />
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-15" value="&lt;span style=&quot;left: 583.275px ; top: 682.326px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.783652)&quot; dir=&quot;ltr&quot;&gt;Fonction : envoyer message au moniteur&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 583.275px ; top: 705.046px ; font-size: 9.6px ; font-family: sans-serif&quot; dir=&quot;ltr&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;left: 587.959px ; top: 705.046px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(1.00673)&quot; dir=&quot;ltr&quot;&gt;tt&lt;/span&gt;&lt;span style=&quot;left: 595.447px ; top: 705.046px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.76572)&quot; dir=&quot;ltr&quot;&gt;endre ‘connexion établie’&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 583.275px ; top: 716.566px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.832919)&quot; dir=&quot;ltr&quot;&gt;tant que&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 586.769px ; top: 728.086px ; font-size: 9.6px ; font-family: sans-serif&quot; dir=&quot;ltr&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;left: 591.454px ; top: 728.086px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(1.00673)&quot; dir=&quot;ltr&quot;&gt;tt&lt;/span&gt;&lt;span style=&quot;left: 598.942px ; top: 728.086px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.809643)&quot; dir=&quot;ltr&quot;&gt;endre messageToMon&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 586.769px ; top: 739.606px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.794381)&quot; dir=&quot;ltr&quot;&gt;envoyer le message au superviseur /*Write*/&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 583.275px ; top: 751.126px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.807669)&quot; dir=&quot;ltr&quot;&gt;fi&lt;/span&gt;&lt;span style=&quot;left: 588.161px ; top: 751.126px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.806593)&quot; dir=&quot;ltr&quot;&gt;n tant que&lt;/span&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="770" y="650" width="230" height="110" as="geometry" />
+          <mxGeometry x="930" y="620" width="230" height="110" as="geometry" />
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-39" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#FF0000;strokeWidth=2;dashed=1;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
@@ -193,19 +226,47 @@
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-42" value="Flux de donées" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="110" y="797" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-54" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;dashed=1;fontSize=10;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-51" target="bAt_LqIN8Pzx5NF2WYkV-7">
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-54" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fontSize=10;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-58" target="bAt_LqIN8Pzx5NF2WYkV-56">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-55" value="moniteurLost" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="bAt_LqIN8Pzx5NF2WYkV-54">
           <mxGeometry x="0.1487" y="-1" relative="1" as="geometry">
-            <mxPoint x="-29" y="-1" as="offset" />
+            <mxPoint x="-8" y="-11" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-51" value="WatchDog moniteur" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
-          <mxGeometry x="500" y="590" width="110" height="40" as="geometry" />
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-62" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontFamily=Helvetica;fontSize=11;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-51" target="bAt_LqIN8Pzx5NF2WYkV-64">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="565" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-53" value="&lt;div&gt;Fonction : watchdog moniteur&lt;/div&gt;&lt;div&gt;Envoyer signal au moniteur&lt;/div&gt;&lt;div&gt;Attendre réponse&lt;/div&gt;&lt;div&gt;Si éhec timeout, produire message moniteurLost&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="270" y="680" width="230" height="110" as="geometry" />
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-63" value="superviseurLost" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;" vertex="1" connectable="0" parent="bAt_LqIN8Pzx5NF2WYkV-62">
+          <mxGeometry x="0.2182" y="1" relative="1" as="geometry">
+            <mxPoint x="-17" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-67" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=11;startArrow=classic;startFill=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-51" target="bAt_LqIN8Pzx5NF2WYkV-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-51" value="WatchDog M-S" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="215" y="545" width="145" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-53" value="&lt;div&gt;Fonction : Watchdog SM/MS&lt;br&gt;&lt;/div&gt;&lt;div&gt;Envoyer signal au moniteur/superviseur&lt;/div&gt;&lt;div&gt;Attendre réponse&lt;/div&gt;&lt;div&gt;Si éhec timeout, produire message moniteurLost/superviseurLost&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="172.5" y="660" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-56" value="Interrupt" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="459.99999999999994" y="610" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-57" value="&lt;div&gt;Fonction : Interrupt&lt;/div&gt;&lt;div&gt;Envoyer un message Stop au robot&lt;/div&gt;&lt;div&gt;Areter la communication avec le robot&lt;/div&gt;&lt;div&gt;Areter le server&lt;/div&gt;&lt;div&gt;Déconnecter la camera&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="460" y="670" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-58" value="WatchDog S-M" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="215" y="610" width="145" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-64" value="Afficher Erreur" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="459.99999999999994" y="545" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-74" value="WatchDog S-M" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="990" y="290" width="145" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
