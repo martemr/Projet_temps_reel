@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-01T13:33:19.973Z" agent="5.0 (X11)" etag="IpitIUcyLMV3-lZY0a7N" version="16.4.11" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-01T13:38:16.965Z" agent="5.0 (X11)" etag="-9sDS86OLkjnn76JOVyg" version="16.4.11" type="github">
   <diagram id="w_0Kd4TP8-2ugyQYXVbY" name="Page-1">
-    <mxGraphModel dx="1373" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1144" dy="649" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -111,6 +111,11 @@
             <mxPoint x="220" y="384" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-43" value="Start" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bAt_LqIN8Pzx5NF2WYkV-25">
+          <mxGeometry x="0.6074" y="2" relative="1" as="geometry">
+            <mxPoint x="22" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-26" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="1" source="bAt_LqIN8Pzx5NF2WYkV-9" target="bAt_LqIN8Pzx5NF2WYkV-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -134,6 +139,24 @@
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-15" value="&lt;span style=&quot;left: 583.275px ; top: 682.326px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.783652)&quot; dir=&quot;ltr&quot;&gt;Fonction : envoyer message au moniteur&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 583.275px ; top: 705.046px ; font-size: 9.6px ; font-family: sans-serif&quot; dir=&quot;ltr&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;left: 587.959px ; top: 705.046px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(1.00673)&quot; dir=&quot;ltr&quot;&gt;tt&lt;/span&gt;&lt;span style=&quot;left: 595.447px ; top: 705.046px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.76572)&quot; dir=&quot;ltr&quot;&gt;endre ‘connexion établie’&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 583.275px ; top: 716.566px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.832919)&quot; dir=&quot;ltr&quot;&gt;tant que&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 586.769px ; top: 728.086px ; font-size: 9.6px ; font-family: sans-serif&quot; dir=&quot;ltr&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;left: 591.454px ; top: 728.086px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(1.00673)&quot; dir=&quot;ltr&quot;&gt;tt&lt;/span&gt;&lt;span style=&quot;left: 598.942px ; top: 728.086px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.809643)&quot; dir=&quot;ltr&quot;&gt;endre messageToMon&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 586.769px ; top: 739.606px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.794381)&quot; dir=&quot;ltr&quot;&gt;envoyer le message au superviseur /*Write*/&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 583.275px ; top: 751.126px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.807669)&quot; dir=&quot;ltr&quot;&gt;fi&lt;/span&gt;&lt;span style=&quot;left: 588.161px ; top: 751.126px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.806593)&quot; dir=&quot;ltr&quot;&gt;n tant que&lt;/span&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="770" y="650" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-39" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#FF0000;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" y="790" as="targetPoint" />
+            <mxPoint x="100" y="790" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-40" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="11" y="811" as="targetPoint" />
+            <mxPoint x="101" y="811" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-41" value="Changement d&#39;état/ évenement" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="780" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bAt_LqIN8Pzx5NF2WYkV-42" value="Flux de donées" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="797" width="180" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
