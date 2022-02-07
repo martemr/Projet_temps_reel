@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-07T07:43:56.958Z" agent="5.0 (X11)" etag="3pISZh26vp8RMVp3_Ak1" version="16.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-07T07:57:11.424Z" agent="5.0 (X11)" etag="gzCiyg663D1OPQYBcAal" version="16.5.2" type="github">
   <diagram id="w_0Kd4TP8-2ugyQYXVbY" name="Page-1">
     <mxGraphModel dx="2199" dy="1411" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -487,6 +487,12 @@
         </mxCell>
         <mxCell id="bAt_LqIN8Pzx5NF2WYkV-12" value="&lt;span style=&quot;left: 157.643px ; top: 369.382px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.79816)&quot; dir=&quot;ltr&quot;&gt;Fonction : démarrer serveur&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 157.643px ; top: 392.102px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.793455)&quot; dir=&quot;ltr&quot;&gt;lancer serveur&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 157.643px ; top: 403.622px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.780117)&quot; dir=&quot;ltr&quot;&gt;si échec a&lt;/span&gt;&lt;span style=&quot;left: 195.141px ; top: 403.622px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.791095)&quot; dir=&quot;ltr&quot;&gt;ffi&lt;/span&gt;&lt;span style=&quot;left: 202.485px ; top: 403.622px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.792606)&quot; dir=&quot;ltr&quot;&gt;cher un message et stopper le programme&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 157.643px ; top: 415.142px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.783171)&quot; dir=&quot;ltr&quot;&gt;sinon produire ‘serveur démarré’&lt;/span&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="-130" y="425" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="p77pa3NInBvX4LVwZotA-12" value="Calcul position" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="680.0000000000001" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p77pa3NInBvX4LVwZotA-13" value="&lt;span style=&quot;left: 343.228px ; top: 650.578px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.804795)&quot; dir=&quot;ltr&quot;&gt;Fonction : calcul position&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;left: 346.722px ; top: 742.418px ; font-size: 9.6px ; font-family: sans-serif ; transform: scalex(0.829472)&quot; dir=&quot;ltr&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="390" y="827" width="230" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
