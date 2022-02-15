@@ -252,6 +252,7 @@ void Tasks::ServerTask(void *arg) {
  */
 void Tasks::SendToMonTask(void* arg) {
     Message *msg;
+    int compteur =0;
     
     cout << "Start " << __PRETTY_FUNCTION__ << endl << flush;
     // Synchronization barrier (waiting that all tasks are starting)
@@ -269,6 +270,24 @@ void Tasks::SendToMonTask(void* arg) {
         rt_mutex_acquire(&mutex_monitor, TM_INFINITE);
         monitor.Write(msg); // The message is deleted with the Write
         rt_mutex_release(&mutex_monitor);
+        
+        if ((msg->GetID() == MESSAGE_ANSWER_ROBOT_TIMEOUT) || 
+                (msg->GetID() == MESSAGE_ANSWER_ROBOT_UNKNOWN_COMMAND) || 
+                (msg->GetID() == MESSAGE_ANSWER_ROBOT_ERROR)){
+            compteur+=1;
+            if (compteur>=3){
+                cout << "Connection with robot lost"<<endl<<flush;
+                rt_mutex_acquire(&mutex_robotStarted, TM_INFINITE);
+                robotStarted = 0;
+                rt_mutex_release(&mutex_robotStarted);
+                rt_mutex_acquire(&mutex_robot, TM_INFINITE);
+                robot.Write(robot.Stop());
+                robot.Close();
+                rt_mutex_release(&mutex_robot);
+            }
+        }else {
+            compteur=0;
+        }
     }
 }
 
@@ -294,14 +313,16 @@ void Tasks::ReceiveFromMonTask(void *arg) {
 
         if (msgRcv->CompareID(MESSAGE_MONITOR_LOST)) {
             cout << "Communication with monitor lost" <<endl <<flush;
-            rt_mutex_acquire(&mutex_robot, TM_INFINITE);
-            robot.Close();
-            rt_mutex_release(&mutex_robot);
             rt_mutex_acquire(&mutex_robotStarted, TM_INFINITE);
             robotStarted = 0;
-            rt_mutex_release(&mutex_robotStarted);  
+            rt_mutex_release(&mutex_robotStarted);
+            rt_mutex_acquire(&mutex_robot, TM_INFINITE);
+            robot.Write(robot.Stop());
+            robot.Close();
+            rt_mutex_release(&mutex_robot);
             delete(msgRcv);
         } else if (msgRcv->CompareID(MESSAGE_ROBOT_COM_OPEN)) {
+            cout << "COM OPEN MESSAGE" << endl << flush;
             rt_sem_v(&sem_openComRobot);
         } else if (msgRcv->CompareID(MESSAGE_ROBOT_START_WITHOUT_WD)) {                   
             rt_sem_v(&sem_startRobot);
@@ -331,6 +352,7 @@ void Tasks::OpenComRobot(void *arg) {
     cout << "Start " << __PRETTY_FUNCTION__ << endl << flush;
     // Synchronization barrier (waiting that all tasks are starting)
     rt_sem_p(&sem_barrier, TM_INFINITE);
+
     
     /**************************************************************************************/
     /* The task openComRobot starts here                                                  */
@@ -363,7 +385,6 @@ void Tasks::StartRobotTask(void *arg) {
     cout << "Start " << __PRETTY_FUNCTION__ << endl << flush;
     // Synchronization barrier (waiting that all tasks are starting)
     rt_sem_p(&sem_barrier, TM_INFINITE);
-    int compteur=0;
     /**************************************************************************************/
     /* The task startRobot starts here                                                    */
     /**************************************************************************************/
@@ -381,24 +402,10 @@ void Tasks::StartRobotTask(void *arg) {
         cout << "Movement answer: " << msgSend->ToString() << endl << flush;
         WriteInQueue(&q_messageToMon, msgSend);  // msgSend will be deleted by sendToMon
 
-        if (msgSend->GetID() == MESSAGE_ANSWER_ACK) {
-            rt_mutex_acquire(&mutex_robotStarted, TM_INFINITE);
-            robotStarted = 1;
-            
-            rt_mutex_release(&mutex_robotStarted);
-            compteur=0;
-        }else {
-            compteur+=1;
-            if (compteur >3){
-                cout << "Connection with robot lost"<<endl<<flush;
-                rt_mutex_acquire(&mutex_robotStarted, TM_INFINITE);
-                robotStarted = 0;
-                rt_mutex_release(&mutex_robotStarted);
-                rt_mutex_acquire(&mutex_robot, TM_INFINITE);
-                robot.Close();
-                rt_mutex_release(&mutex_robot);
-            }
-        }
+        rt_mutex_acquire(&mutex_robotStarted, TM_INFINITE);
+        robotStarted = 1;
+        rt_mutex_release(&mutex_robotStarted);
+        
     }
 }
 
@@ -406,9 +413,7 @@ void Tasks::StartRobotWithWDTask(void *arg) {
     cout << "Start " << __PRETTY_FUNCTION__ << endl << flush;
     // Synchronization barrier (waiting that all tasks are starting)
     rt_sem_p(&sem_barrier, TM_INFINITE);
-    
-    int compteur=0;
-    
+        
     /**************************************************************************************/
     /* The task startRobot starts here                                                    */
     /**************************************************************************************/
@@ -430,23 +435,10 @@ void Tasks::StartRobotWithWDTask(void *arg) {
         cout << "Movement answer: " << msgSend->ToString() << endl << flush;
         WriteInQueue(&q_messageToMon, msgSend);  // msgSend will be deleted by sendToMon
 
-        if (msgSend->GetID() == MESSAGE_ANSWER_ACK) {
-            rt_mutex_acquire(&mutex_robotStarted, TM_INFINITE);
-            robotStarted = 1;
-            rt_mutex_release(&mutex_robotStarted);
-            compteur=0;
-        }else {
-            compteur+=1;
-            if (compteur >3){
-                cout << "Connection with robot lost"<<endl<<flush;
-                rt_mutex_acquire(&mutex_robotStarted, TM_INFINITE);
-                robotStarted = 0;
-                rt_mutex_release(&mutex_robotStarted);
-                rt_mutex_acquire(&mutex_robot, TM_INFINITE);
-                robot.Close();
-                rt_mutex_release(&mutex_robot);
-            }
-        }
+        rt_mutex_acquire(&mutex_robotStarted, TM_INFINITE);
+        robotStarted = 1;
+        rt_mutex_release(&mutex_robotStarted);
+        
     }
 }
 
@@ -477,7 +469,7 @@ void Tasks::WatchDog(void *arg) {
             rt_mutex_release(&mutex_robot);    
                       
             cout << "WatchDog answer : " << msgSend->ToString() << endl << flush;
-            WriteInQueue(&q_messageToMon, msgSend);  // msgSend will be deleted by sendToMon
+            //WriteInQueue(&q_messageToMon, msgSend);  // msgSend will be deleted by sendToMon
         }
     }
     

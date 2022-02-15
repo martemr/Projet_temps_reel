@@ -1,0 +1,5 @@
+# All files except tasks
+*
+!./dumber/software/raspberry/superviseur-robot/tasks.h
+!./dumber/software/raspberry/superviseur-robot/tasks.cpp
+
