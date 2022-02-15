@@ -1,0 +1,22 @@
+# pack-refs with: peeled fully-peeled sorted 
+bf850e63799ccca6581c9739415842f254b8ecff refs/remotes/origin/dev
+ff85e268e8c6e4996105e3b02204cd4f89740af7 refs/remotes/origin/double_port
+0cdea959dfed0c71c45db35db314e08dbb4b28fe refs/remotes/origin/experimental
+f3a83fa7d99d2fe2e14635d7e8454ae92f29f7aa refs/remotes/origin/jpo2019
+fda59fc14db1cf410542eb1fe9174c709de3dbea refs/remotes/origin/master
+588ba2ecc9001ae9650c6b04fcc6f312b5b3f829 refs/remotes/origin/simulation
+1a8b660cd218e5807ddf7ed27894c10e4571bb03 refs/remotes/origin/stable
+443335431b621721f11279902ffa8cb0889a7123 refs/remotes/origin/test-udp
+9820ea5dbad12c298aafbb888a64fc9104eae468 refs/tags/2.0-RC1
+1a8b660cd218e5807ddf7ed27894c10e4571bb03 refs/tags/2.0-RC2
+8869c15df157e55baaccf85e441b4b621ecaa72e refs/tags/2.0-RC3
+e44af5cddca7a2bfb027e2bfdc51a1f5edfc6051 refs/tags/2.1
+776a2f4ce6eadc4af1c87d2f1d33dcfbd5a26b07 refs/tags/C_001
+a4826b1a9f74f72bde5b9833d8a92e5bbff1827d refs/tags/DEV_001
+^2451177ccd99fd29d802b98c120bcf2c9cde2049
+0cdea959dfed0c71c45db35db314e08dbb4b28fe refs/tags/DEV_002
+365843d7860edd51b5d09a04a411300fbaa44d6c refs/tags/ROBOT-FW-1.3
+5beb9ad12d3f44036474806caad24c54c31e5b9e refs/tags/ROBOT-FW-1.4
+d0af8e4a0cda246863a497935267c1f72d7b7276 refs/tags/STABLE-180827
+77b265630ab8dd2677958f9e12382e64e38e19ac refs/tags/VERSION_2.0
+^23ceedda5ded269a3d230c717f69ef6cfc6b6c77
