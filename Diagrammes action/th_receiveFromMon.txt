@@ -1,0 +1,76 @@
+while()
+
+
+:msgRcv = monitor.Read();
+if(msgRcv.CompareID(MESSAGE_MONITOR_LOST)) then (true)
+:monitor.Close()
+robotStarted = 0
+robot.Write(robot.Stop())
+robot.Close()
+closeCamera!;
+
+else (false)
+if(msgRcv.CompareID(MESSAGE_ROBOT_COM_OPEN)) then ( )
+:OpenComRobot!;
+
+else()
+if(msgRcv.CompareID(MESSAGE_ROBOT_START_WITHOUT_WD)) then ( )
+:withWD=0;
+:startRobot!;
+else()
+
+if(msgRcv.CompareID(MESSAGE_ROBOT_START_WITH_WD)) then ( )
+:withWD=1;
+:startRobot!;
+
+else()
+if(msgRcv.CompareID(MESSAGE_CAM_OPEN)) then ( )
+:openCamera!;
+
+else()
+if(msgRcv.CompareID(MESSAGE_CAM_CLOSE)) then ( )
+
+:closeCamera!;
+
+else()
+if(msgRcv.CompareID(MESSAGE_CAM_ASK_ARENA)) then ( )
+
+:th_Arena!;
+
+else()
+if(msgRcv.CompareID(MESSAGE_CAM_ARENA_CONFIRM)) then ( )
+:arenaOk=1;
+:arenaOk!;
+
+else()
+if(msgRcv.CompareID(MESSAGE_ARENA_INFIRM)) then ( )
+:arenaOK=0;
+:arenaOk!;
+
+else()
+if(msgRcv.CompareID(MESSAGE_CAM_POSITION_COMPUTE_START)) then ( )
+:findPosition=1;
+
+else()
+if(msgRcv.CompareID(MESSAGE_CAM_POSITION_COMPUTE_STOP)) then ( )
+:findPosition=0;
+
+else()
+if(msgRcv.CompareID(MESSAGE_ROBOT_GO_FORWARD)|| msgRcv.CompareID(MESSAGE_ROBOT_GO_BACKWARD)|| msgRcv.CompareID(MESSAGE_ROBOT_GO_LEFT)|| msgRcv.CompareID(MESSAGE_ROBOT_GO_RIGHT)|| msgRcv.CompareID(MESSAGE_ROBOT_STOP) then ( )
+:move = msg.GetId();
+
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endwhile
+stop
+@enduml

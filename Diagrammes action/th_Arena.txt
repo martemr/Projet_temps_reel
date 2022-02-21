@@ -1,0 +1,37 @@
+@startuml
+start
+skinparam wrapWidth 50
+skinparam wrapMessageWidth 50
+
+
+while()
+:th_Arena?;
+
+if(camera.isOpen)) then (true)
+:Periodic = 0;
+
+:img = Camera.Grab();
+:a = searchArena(img);
+
+if (a) then( )
+:drawArena(a);
+:msgImg = new MessageImg(MESSAGE_CAM_IMAGE, img);
+:WriteInQueue(toMonitor, msgImg);
+:arenaOk?;
+if (arenaOk) then (true)
+:arena = a;
+else (false)
+endif
+
+else (empty)
+:print("échec recherche arena");
+endif
+else (false)
+:print("Camera Closed");
+
+
+endif
+:Periodic = 1;
+endwhile
+stop
+@enduml

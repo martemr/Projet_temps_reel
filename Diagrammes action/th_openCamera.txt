@@ -1,0 +1,21 @@
+@startuml
+start
+skinparam wrapWidth 50
+skinparam wrapMessageWidth 50
+
+while()
+
+:openCamera?;
+
+:status = camera.Open;
+if (status) then (true)
+:th_Periodic_Image!
+Periodic = 1;
+else(false)
+:message d'erreur vers le moniteur;
+endif
+
+
+endwhile
+stop
+@enduml

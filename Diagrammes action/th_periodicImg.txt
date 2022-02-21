@@ -1,0 +1,39 @@
+@startuml
+start
+skinparam wrapWidth 50
+skinparam wrapMessageWidth 50
+
+:th_Periodic_Image?;
+:start period (100ms);
+
+while()
+
+:rt_task_wait_period();
+
+if(camera.isOpen)) then (true)
+if(Periodic) then (true)
+:img = Camera.Grab();
+
+if (Position) then (true)
+:pos = searchRobot(arena);
+
+if (pos.isEmpty) then (true)
+:msgPos = new MessagePos(MESSAGE_CAM_POSITION, (-1, -1));
+else (false)
+:msgPos = new MessagePos(MESSAGE_CAM_POSITION, pos);
+endif
+
+:WriteInQueue(toMonitor, pos);
+endif
+:msgImg = new MessageImg(MESSAGE_CAM_IMAGE, img);
+:WriteInQueue(toMonitor, img);
+else (false)
+:print("Periodic image suspended");
+endif
+else (false)
+:print("Camera Closed");
+endif
+
+endwhile
+stop
+@enduml

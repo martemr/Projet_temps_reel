@@ -1,0 +1,26 @@
+@startuml
+start
+skinparam wrapWidth 50
+skinparam wrapMessageWidth 50
+
+while()
+
+:closeCamera?;
+
+:status = camera.Open;
+if (status) then (true)
+:Periodic = 0;
+:status = camera.Close();
+if (status) then (success)
+:writeInQueue(toMonitor, "Camera Closed");
+else(failure)
+:writeInQueue(toMonitor, "couldn't close Camara");
+endif
+else (false)
+:print("Camera already closed");
+endif
+
+
+endwhile
+stop
+@enduml

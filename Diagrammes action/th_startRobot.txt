@@ -1,0 +1,26 @@
+@startuml
+start
+
+while()
+
+
+:startRobot?;
+
+if(withWD=0) then (true)
+: msgSend = robot.Write(robot.StartWithoutWD());
+else (false)
+:msgSend = robot.Write(robot.StartWithWD());
+:Watchdog!;
+endif
+
+:messageToMon!msgSend;
+if (msgSend->getId()) then
+->MESSAGE_ANSWER_ACK;
+:robotStarted = true;
+else ()
+
+endif
+endwhile
+stop
+
+@enduml
