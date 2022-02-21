@@ -1,1 +1,46 @@
-<mxfile host="app.diagrams.net" modified="2022-02-21T14:05:21.288Z" agent="5.0 (Windows)" version="16.6.1" etag="FTTjJ4K4ZG0SSqnY4LvV" type="github"><diagram id="BAXBa-76utNwgdBAW8Ok">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-02-21T14:08:55.679Z" agent="5.0 (Windows)" etag="NVwafQIZsJPhwMEjgBMN" version="16.6.1" type="github">
+  <diagram id="BAXBa-76utNwgdBAW8Ok" name="Page-1">
+    <mxGraphModel dx="1422" dy="729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DB4oVx9ZjHzXiHV4Pkm4-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DB4oVx9ZjHzXiHV4Pkm4-2" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="380" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DB4oVx9ZjHzXiHV4Pkm4-4" value="var" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="400" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB4oVx9ZjHzXiHV4Pkm4-5" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="430" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DB4oVx9ZjHzXiHV4Pkm4-7" value="&lt;div align=&quot;left&quot;&gt;Flux de données&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="435" y="340" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB4oVx9ZjHzXiHV4Pkm4-8" value="Signal" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="370" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB4oVx9ZjHzXiHV4Pkm4-9" value="Variable Partagée" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="400" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB4oVx9ZjHzXiHV4Pkm4-10" value="Thread" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="440" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB4oVx9ZjHzXiHV4Pkm4-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="340" y="310" width="230" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DB4oVx9ZjHzXiHV4Pkm4-13" value="Légende Diagrammes fonctionnel" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="310" width="210" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
